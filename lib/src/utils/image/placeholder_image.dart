@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PlaceHolderImage extends StatefulWidget {
+  /// Creates an rendered widget with given [height] and [width].
   const PlaceHolderImage(
       {Key? key,
       this.bgColor,

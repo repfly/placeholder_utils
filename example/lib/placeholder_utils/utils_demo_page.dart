@@ -22,22 +22,45 @@ class _UtilsDemoPageState extends State<UtilsDemoPage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            TextField(
-              controller: loremIpsumController,
-              maxLines: 5,
-              decoration: inputDecoration,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                loremIpsumController.text = loremIpsum();
-                setState(() {});
-              },
-              child: const Text('Generate lorem ipsum'),
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              TextField(
+                controller: loremIpsumController,
+                maxLines: 5,
+                decoration: inputDecoration,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  loremIpsumController.text = loremIpsum();
+                  setState(() {});
+                },
+                child: const Text('Generate lorem ipsum'),
+              ),
+              const Divider(),
+              Align(
+                alignment: Alignment.center,
+                child: Text('Bool value: ${getRandomBool().toString()}'),
+              ),
+              ElevatedButton(
+                  onPressed: (() {
+                    setState(() {});
+                  }),
+                  child: const Text('get random bool')),
+              const Divider(),
+              Align(
+                alignment: Alignment.center,
+                child: Text('Get value: ${getDoubleOrInt().runtimeType}'),
+              ),
+              ElevatedButton(
+                  onPressed: (() {
+                    setState(() {});
+                  }),
+                  child: const Text('get random type in double or int')),
+                  
+            ],
+          ),
         ),
       ),
     );
