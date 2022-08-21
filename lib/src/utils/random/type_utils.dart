@@ -2,9 +2,9 @@ import 'dart:math';
 
 final Random _random = Random();
 
-/// It returns a random boolean value.
+/// Returns a random boolean value.
 bool getRandomBool() {
-  return _random.nextInt(3) % 2 == 0 ? true : false;
+  return _random.nextInt(3).isOdd ? true : false;
 }
 
 /// Returns a Future<bool> that resolves to a random boolean value after a specified duration.

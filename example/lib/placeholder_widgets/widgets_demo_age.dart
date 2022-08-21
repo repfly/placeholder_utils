@@ -29,7 +29,7 @@ class _WidgetsDemoPageState extends State<WidgetsDemoPage> {
                   PlaceHolderAspect(
                     aspectRatio: 4 / 3,
                     constraints: BoxConstraints(maxHeight: 90),
-                    centerChild: Text('4/3'),
+                    centerChild: Text('4:3'),
                   ),
                 ],
               ),
