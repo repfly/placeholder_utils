@@ -3,7 +3,7 @@ description: A plugin to provide useful tools for developers in the development 
 
 version: 0.0.1
 homepage: https://www.alpr.dev
-repository: 
+repository: https://github.com/repfly/placeholder_utils
 
 environment:
   sdk: ">=2.17.3 <3.0.0"
@@ -19,6 +19,5 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 
-flutter:
 
 
