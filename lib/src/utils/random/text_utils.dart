@@ -25,7 +25,7 @@ String loremIpsum(
     paragraphs = words;
   }
 
-  String lorem = _generatePharagraph(paragraphs, words);
+  String lorem = _generateParagraph(paragraphs, words);
   if (words > 3 && initWithLorem) {
     lorem = lorem.replaceAll(lorem.split(" ")[0], "Lorem");
     lorem = lorem.replaceAll(lorem.split(" ")[1], "ipsum,");
@@ -56,7 +56,7 @@ Future<String> futureLoremIpsum(
 /// Args:
 ///   paragraphs (int): The number of paragraphs to generate.
 ///   words (int): The number of words in each paragraph.
-String _generatePharagraph(int paragraphs, int words) {
+String _generateParagraph(int paragraphs, int words) {
   int wordLength = words ~/ paragraphs;
   List<String> result = [];
 

@@ -11,6 +11,12 @@ class ListViewDemo extends StatefulWidget {
 class _ListViewDemoState extends State<ListViewDemo> {
   @override
   Widget build(BuildContext context) {
-    return const PlaceholderListView(itemCount: 50);
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('List View'),
+        ),
+        body: const PlaceholderListView(
+          
+        ));
   }
 }
