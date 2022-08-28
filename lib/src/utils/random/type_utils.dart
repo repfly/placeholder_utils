@@ -2,9 +2,9 @@ import 'dart:math';
 
 final Random _random = Random();
 
-/// It returns a random boolean value.
+/// Returns a random boolean value.
 bool getRandomBool() {
-  return _random.nextInt(3) % 2 == 0 ? true : false;
+  return (_random.nextInt(2) + 1).isOdd ? true : false;
 }
 
 /// Returns a Future<bool> that resolves to a random boolean value after a specified duration.
@@ -16,8 +16,7 @@ Future<bool> getRandomFutureBool({Duration duration = Duration.zero}) async {
 }
 
 /// Returns either an [int] or [double] randomly. In some cases you need to test that when
-/// another type is returned, it will function as intended. Of course, you can find better
-/// use cases than me.
+/// another type is returned, it will continue to function as intended. Discussions are open to further use cases.
 ///
 /// Args:
 ///  Optional [number] (int): The number wished to be returned. Defaults to 1.
