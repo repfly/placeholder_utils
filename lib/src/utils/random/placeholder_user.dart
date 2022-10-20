@@ -83,5 +83,6 @@ extension PlaceholderExtension on PlaceholderUser {
   String get fullName => '$firstName $lastName';
   String get fullAdress =>
       '$street St., floor $floor, $apartmentNo/$buildingNo, $city, ${province ?? ''}$country';
-  PlaceholderUser get demoUser => PlaceholderUser(firstName: 'John', lastName: 'Doe');
+  PlaceholderUser get demoUser =>
+      PlaceholderUser(firstName: 'John', lastName: 'Doe');
 }

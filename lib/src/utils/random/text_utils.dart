@@ -34,9 +34,9 @@ String loremIpsum(
   return lorem;
 }
 
-/// Same features with [loremIpsum] function. 
-/// 
-/// [duration] delays the return with given amount, defaults to zero. 
+/// Same features with [loremIpsum] function.
+///
+/// [duration] delays the return with given amount, defaults to zero.
 Future<String> futureLoremIpsum(
     {Duration duration = Duration.zero,
     int paragraphs = 1,

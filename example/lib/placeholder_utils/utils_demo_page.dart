@@ -33,7 +33,8 @@ class _UtilsDemoPageState extends State<UtilsDemoPage> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  loremIpsumController.text = loremIpsum();
+                  loremIpsumController.text =
+                      loremIpsum(paragraphs: 1, words: 10, initWithLorem: true);
                   setState(() {});
                 },
                 child: const Text('Generate lorem ipsum'),
@@ -58,16 +59,10 @@ class _UtilsDemoPageState extends State<UtilsDemoPage> {
                     setState(() {});
                   }),
                   child: const Text('get random type in double or int')),
-                  
             ],
           ),
         ),
       ),
     );
   }
-
-  // _generateLorem() async {
-  //   await futureLoremIpsum();
-  //   return loremIpsum(paragraphs: 2, words: 40);
-  // }
 }

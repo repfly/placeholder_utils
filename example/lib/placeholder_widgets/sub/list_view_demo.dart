@@ -15,8 +15,6 @@ class _ListViewDemoState extends State<ListViewDemo> {
         appBar: AppBar(
           title: const Text('List View'),
         ),
-        body: const PlaceholderListView(
-          
-        ));
+        body: const PlaceholderListView());
   }
 }
